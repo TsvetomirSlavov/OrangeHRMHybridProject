@@ -1,25 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="38132" started-at="2016-11-04T15:05:38Z" finished-at="2016-11-04T15:06:16Z">
+  <suite name="Default suite" duration-ms="18819" started-at="2016-11-07T06:14:03Z" finished-at="2016-11-07T06:14:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="38132" started-at="2016-11-04T15:05:38Z" finished-at="2016-11-04T15:06:16Z">
-      <class name="testCases.VerifyViewSystemUsersPage">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.VerifyViewSystemUsersPage@47c62251]" name="setup" is-config="true" duration-ms="16567" started-at="2016-11-04T20:35:38Z" finished-at="2016-11-04T20:35:54Z">
+    <test name="Default test" duration-ms="18819" started-at="2016-11-07T06:14:03Z" finished-at="2016-11-07T06:14:21Z">
+      <class name="testCases.VerifySaveSystemUserPage">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.VerifySaveSystemUserPage@47c62251]" name="setup" is-config="true" duration-ms="17240" started-at="2016-11-07T11:44:03Z" finished-at="2016-11-07T11:44:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testSignin()[pri:0, instance:testCases.VerifyViewSystemUsersPage@47c62251]" name="testSignin" duration-ms="21536" started-at="2016-11-04T20:35:54Z" finished-at="2016-11-04T20:36:16Z">
+        <test-method status="FAIL" signature="testSignin()[pri:0, instance:testCases.VerifySaveSystemUserPage@47c62251]" name="testSignin" duration-ms="1509" started-at="2016-11-07T11:44:20Z" finished-at="2016-11-07T11:44:21Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at dataProvider.ExcelDataProvider.getData(ExcelDataProvider.java:41)
+	at testCases.VerifySaveSystemUserPage.testSignin(VerifySaveSystemUserPage.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSignin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.VerifyViewSystemUsersPage@47c62251]" name="tearDown" is-config="true" duration-ms="0" started-at="2016-11-04T20:36:16Z" finished-at="2016-11-04T20:36:16Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.VerifySaveSystemUserPage@47c62251]" name="tearDown" is-config="true" duration-ms="0" started-at="2016-11-07T11:44:21Z" finished-at="2016-11-07T11:44:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.VerifyViewSystemUsersPage -->
+      </class> <!-- testCases.VerifySaveSystemUserPage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
