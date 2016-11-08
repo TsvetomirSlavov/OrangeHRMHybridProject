@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testCases.VerifySearchandDelete">
+      <class name="testCases.VerifySaveSystemUserPage">
         <methods>
-          <include name="setup"/>
-          <include name="testSignin"/>
           <include name="tearDown"/>
+          <include name="testSignin"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- testCases.VerifySearchandDelete -->
+      </class> <!-- testCases.VerifySaveSystemUserPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
